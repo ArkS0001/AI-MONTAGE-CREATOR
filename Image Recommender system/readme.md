@@ -41,3 +41,20 @@ https://huggingface.co/spaces/black-forest-labs/FLUX.1-Kontext-Dev
 +--------------------------------+
 |    Result Displayed on UI      |
 +--------------------------------+
+```
+```mermaid
+graph TD
+    A["<div style='padding:10px;'><b>Image Dataset</b></div>"] --> B;
+    B["<div style='padding:10px;'><b>LLM Aware</b><br/>(Vision model + Similarity score for like and dislike)</div>"] --> C;
+    C["<div style='padding:10px;'><b>ColQwen Omni to Parse Image</b></div>"] --> D;
+    D{"<div style='padding:10px;'><b>Display 10 Images Selected by User</b><br/>or Top 3 Ranked<br/>(UI)</div>"} --> E;
+    E["<div style='padding:10px;'><b>Images + Prompt ⟶ Images</b><br/>(Flux.1 Kontext Dev)</div>"] --> F;
+    F["<div style='padding:10px;'><b>Result Displayed on UI</b></div>"];
+
+    %% Styling
+    style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style B fill:#e6fffa,stroke:#333,stroke-width:2px
+    style C fill:#e6fffa,stroke:#333,stroke-width:2px
+    style D fill:#fff0e6,stroke:#333,stroke-width:2px
+    style E fill:#e6faff,stroke:#333,stroke-width:2px
+    style F fill:#f9f9f9,stroke:#333,stroke-width:2px
