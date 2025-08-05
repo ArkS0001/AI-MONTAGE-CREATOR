@@ -11,6 +11,11 @@ User instructs Wizzy/the system: "Create a montage for my trip to the Rockies. A
 The system finds the optimal images using a multimodal model, that can have high coherence to the user’s instructions (so a purely vision model won’t be good enough), stitches them together, retrieves a piece of music (based on description of the piece and the prompts instructions), adds it to the collection and generates the montage collection.
 
 
+
+https://huggingface.co/Qwen/Qwen-Image
+
+https://huggingface.co/openai/gpt-oss-120b
+
 ```
 +--------------------------------+
 |    LLM CHAT Interface          |
